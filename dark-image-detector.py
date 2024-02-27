@@ -57,8 +57,7 @@ if __name__ == '__main__':
 
 	# Get the list of image files
 	image_files = [filename for filename in os.listdir(
-		image_dir) if filename.endswith('.jpg') or filename.endswith('.png')]
-
+		image_dir) if filename.endswith('.jpg') or filename.endswith('.png') or filename.endswith('.jpeg')]
 	# Split the image files into batches
 	image_batches = [image_files[i:i+images_per_batch]
 					for i in range(0, len(image_files), images_per_batch)]
